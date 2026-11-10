@@ -1,13 +1,15 @@
 # 牌桌实验室 v2
 
+在线游玩：https://lawsonboom.github.io/tablelab/
+
 移动端优先的21点与百家乐互动教学网页。无需账户，各人独立游玩，只有虚拟筹码；不提供充值、提现、真钱下注、联网对战或盈利保证。
 
 ## 文件
-- `dist/index.html`、`style.css`、`engine.js`、`app.js`：公开网站的完整源文件，无第三方运行依赖。
+- `index.html`、`style.css`、`engine.js`、`app.js`：公开网站的完整源文件，无第三方运行依赖。
 - `test-engine.cjs`：可运行的规则、结算、策略与随机牌局检查。使用 Node.js 执行 `node test-engine.cjs`。
 - `单文件版.html`：内联全部样式和逻辑，现代桌面浏览器可直接打开；手机请优先使用公开HTTPS地址，文件预览可能不执行脚本。
 
-本地预览：在 `dist` 文件夹运行 `python3 -m http.server 8765`，浏览器打开 `http://localhost:8765`。发布时托管 `dist` 的全部四个文件即可。
+本地预览：在项目文件夹运行 `python3 -m http.server 8765`，浏览器打开 `http://localhost:8765`。发布时托管根目录的HTML、CSS和JS文件即可。
 
 ## 桌规与记录
 21点：6副牌、S17、3:2、荷官查天然、DAS、晚投降、最多四手、分A限一张且不再分A、分牌21点按普通赢局。策略为总点数基础策略，不使用剩余牌组成修正。

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "assertions": 18779,
+  "randomBlackjackRounds": 2500,
+  "randomBaccaratRounds": 2500,
+  "strategyCells": 310,
+  "thirdCardCells": 88
+}
